@@ -1,0 +1,21 @@
+---
+title: "Urinary Urgency & Frequency"
+slug: "urinary-urgency"
+parent_category: "pelvic"
+seo_title: "Urinary Urgency Treatment Columbia MD | WildHer PT"
+seo_description: "Treatment for urinary urgency and frequency in Columbia, MD. Expert pelvic floor physical therapy for bladder control issues."
+overview: "Urinary urgency is the sudden, strong need to urinate that can be difficult to control. It often comes with increased frequency, meaning you need to use the bathroom more often than normal. These symptoms can significantly impact your quality of life, but they are highly treatable with the right approach."
+who_it_affects: "This commonly affects postpartum women, perimenopausal women, athletes, and those with chronic stress or anxiety. It can also occur after certain surgeries, with some medications, or as a result of bladder irritants in your diet."
+treatment_approach: "I use a combination of manual therapy, behavioral strategies, and targeted exercises to help you regain control. We'll work on bladder training, pelvic floor coordination, and identify any lifestyle factors that may be contributing to your symptoms."
+faqs:
+  - question: "How long does treatment take?"
+    answer: "Most patients see improvement within 4-6 sessions, though this varies by individual. Some notice changes within the first few weeks."
+  - question: "Do I need a referral?"
+    answer: "No, Maryland allows direct access to physical therapy without a physician referral."
+  - question: "Is this covered by insurance?"
+    answer: "I am an out-of-network provider. I provide superbills for insurance reimbursement."
+  - question: "Will I have to do exercises at home?"
+    answer: "Yes, home exercises are an important part of your treatment plan. I'll teach you techniques you can easily fit into your daily routine."
+cta_text: "Ready to find relief?"
+cta_link: "/contact"
+---

@@ -1,0 +1,21 @@
+---
+hero_headline: "Pelvic Floor Physical Therapy in Columbia, MD"
+hero_subheadline: "Expert care for your body, on your terms."
+hero_cta_text: "Book a Consultation"
+hero_cta_link: "/contact"
+hero_image: "/images/hero.jpg"
+intro_heading: "Compassionate, Evidence-Based Care"
+intro_body: "I help women recover from pelvic pain, postpartum issues, and orthopedic conditions. With personalized treatment plans and a supportive environment, we'll work together to help you feel strong, confident, and in control of your body again."
+featured_services:
+  - title: "Pelvic Floor Therapy"
+    link: "/conditions/pelvic-pain"
+    description: "Treatment for incontinence, pelvic pain, and more"
+  - title: "Postpartum Rehab"
+    link: "/conditions/postpartum"
+    description: "Recover strength and function after pregnancy"
+  - title: "Orthopedic Care"
+    link: "/conditions/orthopedic"
+    description: "Back, hip, and joint pain treatment"
+seo_title: "Pelvic Floor Physical Therapy Columbia MD | WildHer PT"
+seo_description: "Expert pelvic floor physical therapy in Columbia, Maryland. Treating incontinence, pelvic pain, postpartum recovery, and more."
+---

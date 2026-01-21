@@ -1,0 +1,21 @@
+---
+title: "Pelvic Pain"
+slug: "pelvic-pain"
+parent_category: "pelvic"
+seo_title: "Pelvic Pain Treatment Columbia MD | WildHer PT"
+seo_description: "Expert pelvic pain treatment in Columbia, MD. Physical therapy for chronic pelvic pain, vulvodynia, and painful intercourse."
+overview: "Pelvic pain can manifest in many ways, from a constant dull ache to sharp, intermittent pain. It may be felt in the lower abdomen, pelvis, vagina, or rectum. Whatever form it takes, pelvic pain can be debilitating, but physical therapy offers effective, non-invasive treatment options."
+who_it_affects: "Pelvic pain affects women of all ages. Common causes include endometriosis, interstitial cystitis, vulvodynia, painful intercourse (dyspareunia), and muscle tension or dysfunction. It can also occur after surgery, childbirth, or trauma."
+treatment_approach: "Treatment begins with a thorough evaluation to understand the source of your pain. We'll use a combination of manual therapy to release tight muscles and tissues, exercises to improve coordination and strength, and education to help you understand your body and manage symptoms."
+faqs:
+  - question: "What can I expect at my first appointment?"
+    answer: "Your first visit includes a comprehensive evaluation where we discuss your history, symptoms, and goals. I may perform an external and/or internal examination with your consent to assess your pelvic floor muscles."
+  - question: "Is pelvic floor physical therapy painful?"
+    answer: "Treatment should never be painful. While some techniques may cause mild discomfort, I always work within your comfort level and communicate throughout each session."
+  - question: "How many sessions will I need?"
+    answer: "This depends on the complexity of your condition. Many patients see improvement within 6-8 sessions, while others may need longer treatment."
+  - question: "Can pelvic pain be cured?"
+    answer: "Many patients experience significant reduction or complete resolution of their symptoms with consistent treatment. The goal is always to help you return to the activities you love."
+cta_text: "Take the first step toward relief"
+cta_link: "/contact"
+---

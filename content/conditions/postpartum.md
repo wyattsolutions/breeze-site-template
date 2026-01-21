@@ -1,0 +1,21 @@
+---
+title: "Postpartum Recovery"
+slug: "postpartum"
+parent_category: "pelvic"
+seo_title: "Postpartum Physical Therapy Columbia MD | WildHer PT"
+seo_description: "Postpartum physical therapy in Columbia, MD. Expert care for diastasis recti, pelvic floor weakness, and recovery after childbirth."
+overview: "Your body goes through incredible changes during pregnancy and childbirth. Postpartum physical therapy helps you recover, rebuild, and return to the activities you love. Whether you gave birth vaginally or via c-section, your body deserves expert care during this transition."
+who_it_affects: "All birthing people can benefit from postpartum physical therapy, regardless of the type of delivery. Common concerns include pelvic floor weakness, diastasis recti (abdominal separation), back pain, painful intercourse, and difficulty returning to exercise."
+treatment_approach: "We'll start with a comprehensive evaluation of your pelvic floor, core, and overall movement patterns. Treatment typically includes exercises to restore strength and coordination, manual therapy to address any tightness or pain, and guidance on safely returning to exercise and daily activities."
+faqs:
+  - question: "When can I start postpartum physical therapy?"
+    answer: "You can start as early as 2-3 weeks postpartum for gentle work, or wait until after your 6-week checkup. There's no wrong time to begin, even years after giving birth."
+  - question: "Will I need an internal exam?"
+    answer: "An internal exam provides valuable information about your pelvic floor, but it's always your choice. We can also accomplish a lot with external assessment and treatment."
+  - question: "Can you help with diastasis recti?"
+    answer: "Yes! I specialize in helping women restore core function and address abdominal separation through targeted exercises and movement retraining."
+  - question: "I had a c-section. Do I still need pelvic floor PT?"
+    answer: "Absolutely. Your pelvic floor is affected by pregnancy itself, not just vaginal delivery. C-section recovery also involves scar tissue management and core rehabilitation."
+cta_text: "Start your recovery journey"
+cta_link: "/contact"
+---

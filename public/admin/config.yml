@@ -1,0 +1,143 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+  # For local development, uncomment the following:
+  # name: git-gateway
+
+# Uncomment for local development with Decap CMS proxy server
+# local_backend: true
+
+media_folder: public/images
+public_folder: /images
+
+# Editorial workflow for draft/review/publish
+publish_mode: editorial_workflow
+
+collections:
+  # Global Settings
+  - name: settings
+    label: Settings
+    files:
+      - name: global
+        label: Global Settings
+        file: content/settings/global.md
+        fields:
+          - { label: Site Name, name: site_name, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Address, name: address, widget: string }
+          - label: Social Media
+            name: social
+            widget: object
+            fields:
+              - { label: Instagram URL, name: instagram, widget: string, required: false }
+              - { label: Facebook URL, name: facebook, widget: string, required: false }
+              - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+          - { label: Footer Text, name: footer_text, widget: string }
+
+      - name: homepage
+        label: Homepage
+        file: content/pages/home.md
+        fields:
+          - { label: Hero Headline, name: hero_headline, widget: string }
+          - { label: Hero Subheadline, name: hero_subheadline, widget: string }
+          - { label: Hero CTA Text, name: hero_cta_text, widget: string }
+          - { label: Hero CTA Link, name: hero_cta_link, widget: string }
+          - { label: Hero Image, name: hero_image, widget: image, required: false }
+          - { label: Intro Heading, name: intro_heading, widget: string }
+          - { label: Intro Body, name: intro_body, widget: text }
+          - label: Featured Services
+            name: featured_services
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Link, name: link, widget: string }
+              - { label: Description, name: description, widget: string }
+          - { label: SEO Title, name: seo_title, widget: string }
+          - { label: SEO Description, name: seo_description, widget: text }
+
+  # Pages
+  - name: pages
+    label: Pages
+    folder: content/pages
+    create: true
+    slug: "{{slug}}"
+    filter: { field: slug, value: "!home" }
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: SEO Title, name: seo_title, widget: string, required: false }
+      - { label: SEO Description, name: seo_description, widget: text }
+      - { label: CTA Text, name: cta_text, widget: string, required: false }
+      - { label: CTA Link, name: cta_link, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  # Conditions
+  - name: conditions
+    label: Conditions
+    folder: content/conditions
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - label: Parent Category
+        name: parent_category
+        widget: select
+        options:
+          - { label: Pelvic Floor, value: pelvic }
+          - { label: Orthopedic, value: orthopedic }
+          - { label: Other, value: other }
+      - { label: SEO Title, name: seo_title, widget: string, required: false }
+      - { label: SEO Description, name: seo_description, widget: text }
+      - { label: Overview, name: overview, widget: text }
+      - { label: Who It Affects, name: who_it_affects, widget: text }
+      - { label: Treatment Approach, name: treatment_approach, widget: text }
+      - label: FAQs
+        name: faqs
+        widget: list
+        fields:
+          - { label: Question, name: question, widget: string }
+          - { label: Answer, name: answer, widget: text }
+      - { label: CTA Text, name: cta_text, widget: string }
+      - { label: CTA Link, name: cta_link, widget: string }
+
+  # Blog Posts
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: Author, name: author, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Featured Image, name: featured_image, widget: image, required: false }
+      - { label: SEO Title, name: seo_title, widget: string, required: false }
+      - { label: SEO Description, name: seo_description, widget: text }
+      - { label: Body, name: body, widget: markdown }
+
+  # Resources
+  - name: resources
+    label: Resources
+    folder: content/resources
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Link, name: link, widget: string }
+      - { label: Affiliate Link, name: affiliate, widget: boolean, default: false }
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - { label: Tools, value: tools }
+          - { label: Books, value: books }
+          - { label: Services, value: services }
+          - { label: Other, value: other }
