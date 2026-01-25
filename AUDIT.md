@@ -133,6 +133,45 @@
 
 ---
 
+## Premium Tier Upgrade: Animation Stack
+
+For clients wanting a $2M build feel (higher price point), add the premium animation stack from BourbonBuddy:
+
+### Dependencies
+```bash
+npm install gsap @studio-freight/lenis framer-motion
+```
+
+### What It Adds
+| Feature | Tech | Effect |
+|---------|------|--------|
+| Buttery smooth scroll | Lenis | 60fps scrolling, premium feel |
+| Parallax backgrounds | GSAP ScrollTrigger | Depth and motion on scroll |
+| Staggered reveals | Framer Motion | Cards/sections animate in sequence |
+| Glassmorphism | CSS | Frosted glass cards with gradient borders |
+| Floating particles | GSAP | Ambient gold/brand-color particles |
+| 3D reveals | CSS transforms + GSAP | Elements rotate into view on scroll |
+| Film grain | SVG overlay | Subtle texture, high-end aesthetic |
+
+### Reference Files
+- **Patterns:** `~/.claude/skills/web-design-mastery/references/premium-animations.md`
+- **Example:** `wyattsolutions/bourbonbuddy` (live: bourbonbuddy.vercel.app)
+
+### Implementation
+1. Copy `SmoothScroll.tsx` and `FloatingParticles.tsx` from bourbonbuddy
+2. Wrap layout in `<SmoothScroll>`
+3. Add GSAP ScrollTrigger to hero/section components
+4. Apply glassmorphism classes to cards
+5. Add grain overlay to layout
+
+### Pricing Implication
+This upgrades a Tier 1 ($3K) or Tier 2 ($5K) site to Tier 3 ($10K) territory. Use for:
+- High-end service businesses
+- Luxury/premium brands
+- Clients specifically requesting "modern" or "impressive" sites
+
+---
+
 ## Test Results
 
 ```
