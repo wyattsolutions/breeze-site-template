@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { getGlobalSettings, getAllPages } from '@/lib/content'
 import { generateLocalBusinessSchema, generateWebsiteSchema } from '@/lib/schema'
 import { Schema } from '@/components/SEOHead'
+import { AccessibilityWidget } from '@/components/AccessibilityWidget'
 import './globals.css'
 
 const geistSans = Geist({
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Header settings={settings} pages={pages} />
         <main className="flex-1">{children}</main>
         <Footer settings={settings} />
+        <AccessibilityWidget />
       </body>
     </html>
   )

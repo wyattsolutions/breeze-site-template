@@ -1,0 +1,112 @@
+/* =========================================
+   Accessibility Widget - CSS Overrides
+   Applied via data-* attributes on <html>
+   ========================================= */
+
+/* --- OpenDyslexic Font --- */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('/fonts/OpenDyslexic-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- CSS Variables for Scoped Overrides ---
+   These allow the widget to reset its own appearance
+   by overriding the variable values locally */
+:root {
+  --a11y-font: inherit;
+  --a11y-line-height: inherit;
+  --a11y-letter-spacing: inherit;
+}
+
+/* --- Text Size --- */
+html[data-a11y-text-size="large"] { font-size: 112.5%; }
+html[data-a11y-text-size="xl"]    { font-size: 125%; }
+html[data-a11y-text-size="xxl"]   { font-size: 150%; }
+
+/* --- High Contrast (invert + hue-rotate) ---
+   Inverts all colors for high contrast. Media, canvas,
+   and the widget itself get double-inverted to look normal. */
+html[data-a11y-contrast="high"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html[data-a11y-contrast="high"] img,
+html[data-a11y-contrast="high"] video,
+html[data-a11y-contrast="high"] canvas,
+html[data-a11y-contrast="high"] picture,
+html[data-a11y-contrast="high"] [data-a11y-widget] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* --- Dyslexia Font --- */
+html[data-a11y-font="dyslexia"] {
+  --a11y-font: 'OpenDyslexic', sans-serif;
+}
+
+html[data-a11y-font="dyslexia"] * {
+  font-family: var(--a11y-font) !important;
+}
+
+/* --- Line Spacing --- */
+html[data-a11y-line-spacing="true"] {
+  --a11y-line-height: 2;
+}
+
+html[data-a11y-line-spacing="true"] * {
+  line-height: var(--a11y-line-height) !important;
+}
+
+/* --- Letter Spacing --- */
+html[data-a11y-letter-spacing="true"] {
+  --a11y-letter-spacing: 0.12em;
+}
+
+html[data-a11y-letter-spacing="true"] * {
+  letter-spacing: var(--a11y-letter-spacing) !important;
+}
+
+/* --- Highlight Links --- */
+html[data-a11y-highlight-links="true"] a {
+  outline: 2px solid hsl(var(--primary)) !important;
+  outline-offset: 2px;
+  text-decoration: underline !important;
+}
+
+/* --- Pause Animations --- */
+html[data-a11y-motion="reduced"] *,
+html[data-a11y-motion="reduced"] *::before,
+html[data-a11y-motion="reduced"] *::after {
+  animation-duration: 0ms !important;
+  animation-delay: 0ms !important;
+  transition-duration: 0ms !important;
+  transition-delay: 0ms !important;
+}
+
+/* =========================================
+   Widget Self-Reset
+   Must appear AFTER all overrides so order
+   wins when specificity is equal.
+   ========================================= */
+
+/* Reset CSS variables inside widget */
+[data-a11y-widget] {
+  --a11y-font: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --a11y-line-height: 1.5;
+  --a11y-letter-spacing: normal;
+}
+
+/* Re-enable transitions for widget toggle animations */
+html[data-a11y-motion="reduced"] [data-a11y-widget] *,
+html[data-a11y-motion="reduced"] [data-a11y-widget] *::before,
+html[data-a11y-motion="reduced"] [data-a11y-widget] *::after {
+  transition-duration: 150ms !important;
+}
+
+/* Remove link highlighting inside widget */
+html[data-a11y-highlight-links="true"] [data-a11y-widget] a {
+  outline: none !important;
+  text-decoration: none !important;
+}

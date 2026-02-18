@@ -91,6 +91,38 @@ Reusable components and features built for Breeze Site clients. Reference this w
 
 ---
 
+### 6. Accessibility Widget
+**Built for:** meghanbeier.com, included in Breezesite template
+**What it does:** Floating toolbar with 8 accessibility controls, giving users real-time control over readability and visual presentation.
+
+**Controls:**
+- Text Size (4 levels: Default, Large, XL, XXL)
+- High Contrast (invert + hue-rotate, auto-corrects images)
+- Dyslexia Font (OpenDyslexic, self-hosted woff2)
+- Line Spacing (doubles line-height)
+- Letter Spacing (adds 0.12em tracking)
+- Highlight Links (outline + underline on all links)
+- Pause Animations (kills CSS + GSAP animations)
+- Reading Guide (horizontal bar follows cursor Y)
+- Reset All (clears localStorage, removes all overrides)
+
+**Technical:**
+- Client component with localStorage persistence
+- Data attributes on `<html>` drive all overrides via CSS
+- CSS variable scoping keeps the widget itself unaffected by its own overrides
+- Focus trap + Escape to close, full ARIA (role=dialog, role=switch, aria-expanded)
+- Mobile: full-width bottom sheet. Desktop: popup above trigger button
+- z-index 9999 (above all content including cursor trails)
+
+**Files:**
+- `components/AccessibilityWidget.tsx` - Main component
+- `components/accessibility-widget.css` - CSS override rules
+- `public/fonts/OpenDyslexic-Regular.woff2` - Self-hosted font
+
+**Pitch:** "Every site ships with a built-in accessibility toolkit. No third-party widget, no monthly fee, no cookie banner. Your visitors control text size, contrast, fonts, and animations. It's a differentiator that shows you care about all users."
+
+---
+
 ## Standard Features (Expected)
 
 ### Responsive Design
@@ -149,4 +181,4 @@ Reusable components and features built for Breeze Site clients. Reference this w
 
 ---
 
-*Last updated: 2026-01-27*
+*Last updated: 2026-02-18*

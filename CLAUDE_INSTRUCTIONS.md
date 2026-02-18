@@ -175,6 +175,7 @@ category: "tools"
 - `BlogCard.tsx` — blog post preview card
 - `SEOHead.tsx` — meta tags, schema, OG tags
 - `PageHeader.tsx` — consistent H1 + intro for inner pages
+- `AccessibilityWidget.tsx` — floating accessibility toolbar (text size, contrast, dyslexia font, spacing, link highlighting, pause animations, reading guide). Included in root layout by default. Self-contained client component with localStorage persistence.
 
 ### Animations (Tailwind-based, no external deps)
 - Fade in on load
@@ -210,6 +211,8 @@ breeze-site-template/
 │   ├── BlogCard.tsx
 │   ├── SEOHead.tsx
 │   ├── PageHeader.tsx
+│   ├── AccessibilityWidget.tsx       # Floating a11y toolbar (8 controls)
+│   ├── accessibility-widget.css      # CSS overrides for a11y features
 │   └── animations/
 │       └── FadeIn.tsx                # Scroll-triggered animations
 ├── content/
