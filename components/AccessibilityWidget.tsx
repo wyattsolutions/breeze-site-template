@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef, useCallback } from "react"
 import {
-  Accessibility,
   X,
   Type,
   Eye,
@@ -13,6 +12,7 @@ import {
   Pause,
   Minus,
   RotateCcw,
+  SunMoon,
 } from "lucide-react"
 import "./accessibility-widget.css"
 
@@ -239,7 +239,7 @@ export function AccessibilityWidget() {
         aria-expanded={isOpen}
         className="fixed bottom-6 right-6 z-[9999] flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all hover:opacity-90 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       >
-        <Accessibility className="h-6 w-6" />
+        <Eye className="h-6 w-6" />
         {hasActive && (
           <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-white bg-amber-400" />
         )}
@@ -298,7 +298,7 @@ export function AccessibilityWidget() {
             </div>
 
             <ToggleRow
-              icon={Eye}
+              icon={SunMoon}
               label="High Contrast"
               active={prefs.highContrast}
               onToggle={() => updatePref("highContrast", !prefs.highContrast)}
