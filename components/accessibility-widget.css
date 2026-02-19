@@ -27,17 +27,17 @@ html[data-a11y-text-size="xl"]    { font-size: 125%; }
 html[data-a11y-text-size="xxl"]   { font-size: 150%; }
 
 /* --- High Contrast (invert + hue-rotate) ---
-   Inverts all colors for high contrast. Media, canvas,
-   and the widget itself get double-inverted to look normal. */
-html[data-a11y-contrast="high"] {
+   Filter applied to content wrapper (not <html>) to avoid
+   breaking position:fixed on the accessibility widget.
+   Media elements get double-inverted to look normal. */
+html[data-a11y-contrast="high"] #a11y-content-wrapper {
   filter: invert(1) hue-rotate(180deg);
 }
 
-html[data-a11y-contrast="high"] img,
-html[data-a11y-contrast="high"] video,
-html[data-a11y-contrast="high"] canvas,
-html[data-a11y-contrast="high"] picture,
-html[data-a11y-contrast="high"] [data-a11y-widget] {
+html[data-a11y-contrast="high"] #a11y-content-wrapper img,
+html[data-a11y-contrast="high"] #a11y-content-wrapper video,
+html[data-a11y-contrast="high"] #a11y-content-wrapper canvas,
+html[data-a11y-contrast="high"] #a11y-content-wrapper picture {
   filter: invert(1) hue-rotate(180deg);
 }
 

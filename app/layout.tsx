@@ -47,9 +47,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased min-h-screen flex flex-col`}
       >
-        <Header settings={settings} pages={pages} />
-        <main className="flex-1">{children}</main>
-        <Footer settings={settings} />
+        <div id="a11y-content-wrapper" className="flex-1 flex flex-col min-h-screen">
+          <Header settings={settings} pages={pages} />
+          <main className="flex-1">{children}</main>
+          <Footer settings={settings} />
+        </div>
         <AccessibilityWidget />
       </body>
     </html>
